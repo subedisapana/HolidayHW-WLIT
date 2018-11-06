@@ -1,11 +1,47 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+  <style>
+      body{
+        background-image: url("https://cdn.icon-icons.com/icons2/505/PNG/512/glasses-books_icon-icons.com_49292.png");
+
+         }
+         
+         h1{
+          font-size:40px;
+          /*background-color:Tomato;
+          font-size:40px;
+          background-size: 300px 100px;
+          */
+          }
+
+
+       p{
+          font-size:30px;/*
+          background-color:DodgerBlue;
+          font-size:25px;
+          background-size: 300px 100ps;*/
+          } 
+
+
+   </style>
+
+     <body>
+          <form method="post" action="/site"></form>
+   
+          <h1><%= title %></h1>
+          <p>Welcome to <%= title %></p>
+          <p>Find Articles And Journels</p>
+
+    
+          <form action="/site" method = "get">
+          <button type="submit" class="btn btn-warning btn-lg" >GET STARTED</button>
+         </form>                
+
+     </body>
+  
+
+</html> 
