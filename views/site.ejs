@@ -17,14 +17,21 @@
     
    }
   body{
-        background-image: url("http://www.sanjayghodawatuniversity.ac.in/departments/electrical-engi/images/usefull-link.jpg");}
+        background-image: url("http://www.sanjayghodawatuniversity.ac.in/departments/electrical-engi/images/usefull-link.jpg"); 
+        background-repeat: no-repeat;
+        background-size: 1500px 1000px;}
 
+ .wrapper {
+    text-align: center;
+}
+
+ 
 
 
    </style>
 
      <body>
-          <form method="post" action="/"></form>
+          <form method="post" action="/login"></form>
           <h1>scolar.com</h1>
           <p><b><a href="default.asp" target="_blank">Related Link</a></b></p>
 
@@ -46,9 +53,12 @@
         
           
     
-          <form action="/" method = "get">
-          <button  type="submit" class="btn btn-warning btn-lg" >Back</button>
-                 </form>                
+        <form action="/login" method = "get">
+            
+            <div class="wrapper">
+            <button  type="submit" class="btn btn-warning btn-lg" >Back</button>
+           </div>
+       </form>                
 
      </body>
   

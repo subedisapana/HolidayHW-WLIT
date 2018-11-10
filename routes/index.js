@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Users=require('../models/user');
-//var Notes=require('../models/notes');         
+         
 
 
 /* GET home page. */
@@ -25,7 +25,8 @@ router.post('/signup',function(req,res){      // terminal ma display garcha sign
 	console.log('request.....', req.body);
 	var user = new Users({                   //export wala aarko user obj garako
 		username: req.body.username,
-		password: req.body.password
+		password: req.body.password,
+		repassword: req.body.password
 	});
 
 	var promise=user.save() 
@@ -36,7 +37,6 @@ router.post('/signup',function(req,res){      // terminal ma display garcha sign
 
 
 router.post('/login',function(req,res){
- // terminal ma display garcha login ko  ani user.find le already db ma bhako find garcha 
 	if(req.body.username && req.body.password){
 		
 	Users.findOne({
@@ -49,6 +49,9 @@ router.post('/login',function(req,res){
 }
      else{ console.log('not  a valid Id ');}
 });
+
+
+
 
 
 
